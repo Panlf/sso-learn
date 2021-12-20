@@ -29,19 +29,20 @@ public class JWTController {
 
     @GetMapping("/verify")
     public String verifyToken(String token){
+        String result =  "token验证通过";
         try{
             //验证令牌
             JwtUtils.verify(token);
         }catch (SignatureVerificationException e){
-            return e.getMessage();
+            result = "token签名不一致";
         }catch (TokenExpiredException e){
-            return e.getMessage();
+            result = "token过期";
         }catch (AlgorithmMismatchException e){
-            return e.getMessage();
+            result = "token算法不匹配";
         }catch (Exception e){
-            return e.getMessage();
+            result = e.getMessage();
         }
-        return "token验证通过";
+        return result;
     }
 
 }
