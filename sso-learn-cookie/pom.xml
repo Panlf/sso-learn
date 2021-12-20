@@ -4,32 +4,10 @@
 	<parent>
 		<groupId>com.plf.learn</groupId>
 		<artifactId>sso-learn</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 	</parent>
 	<artifactId>sso-learn-cookie</artifactId>
 	<packaging>pom</packaging>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-			<version>2.1.4.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<version>2.1.4.RELEASE</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-			<version>2.1.4.RELEASE</version>
-		</dependency>
-	</dependencies>
-
 
 	<modules>
 		<module>sso-learn-cookie-login</module>
