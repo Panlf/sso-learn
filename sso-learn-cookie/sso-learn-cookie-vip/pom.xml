@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.plf.learn</groupId>
     <artifactId>sso-learn-cookie</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
   </parent>
   <artifactId>sso-learn-cookie-vip</artifactId>
 </project>
