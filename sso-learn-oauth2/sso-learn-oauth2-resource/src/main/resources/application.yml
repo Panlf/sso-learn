@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: oauth2-resource
+  redis:
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: 10ms
+
+server:
+  port: 8001
+
+security:
+   oauth2:
+     client:
+       client-id: client
+       client-secret: secret
+       access-token-uri: http://localhost:8000/oauth/token
+       user-authorization-uri: http://localhost:8000/oauth/authorize
+     resource:
+       token-info-uri: http://localhost:8000/oauth/check_token
